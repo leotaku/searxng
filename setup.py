@@ -3,9 +3,6 @@
 
 from setuptools import setup, find_packages
 
-from searx.version import VERSION_TAG, GIT_URL
-from searx import get_setting
-
 with open('README.rst', encoding='utf-8') as f:
     long_description = f.read()
 
@@ -18,13 +15,13 @@ with open('requirements-dev.txt') as f:
 setup(
     name='searxng',
     python_requires=">=3.8",
-    version=VERSION_TAG,
+    version="1.0.0",
     description="A privacy-respecting, hackable metasearch engine",
     long_description=long_description,
-    url=get_setting('brand.docs_url'),
+    url="https://docs.searxng.org",
     project_urls={
-        "Code": GIT_URL,
-        "Issue tracker": get_setting('brand.issue_url')
+        "Code": "https://github.com/searxng/searxng/",
+        "Issue tracker": "https://github.com/searxng/searxng/issues"
     },
     classifiers=[
         "Programming Language :: Python",
